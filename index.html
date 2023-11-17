@@ -21,6 +21,19 @@
                 var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
                 v.onload = function () {
                     window.voiceflow.chat.load({
+                        verify: { projectID: '6557267c19a9740006e65feb' },
+                        url: 'https://general-runtime.voiceflow.com',
+                        versionID: 'production'
+                    });
+                }
+                v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+            })(document, 'script');
+        </script>
+        <!-- <script type="text/javascript">
+            (function (d, t) {
+                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                v.onload = function () {
+                    window.voiceflow.chat.load({
                         verify: { projectID: '65525a8fe25d4b0007e9fdc2' }, // il faut un project id, il faut une url, et une version
                         url: 'https://general-runtime.voiceflow.com',
                         versionID: 'production' // mettre sa solution en open source pour que tous ceux qui veulent l'utiliser le fassent
@@ -28,7 +41,7 @@
                 }
                 v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
             })(document, 'script');
-        </script>
+        </script> -->
     </body>
 
 </html>
